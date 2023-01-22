@@ -1,0 +1,142 @@
+@import url('style.css');
+
+a{
+  color: var(--colorWhite);
+}
+.caminhoUrlContainer{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--colorRed);
+  z-index: 100;
+}
+.caminhoUrl{
+  width: 100%;
+  max-width: 1250px;
+  height: 100px;
+  color: var(--colorWhite);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 0.6rem;
+  padding-left: 20px;
+  font-size: 1.4rem;
+}
+.containerConteudoImovel{
+  width: 100%;
+  max-width: 1250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.capa{
+  width: 100%;
+  height: 400px;
+  margin-top: -10px;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('/assets/capa_test.png');
+  z-index: 1;
+}
+.textTitle{
+  top: 150px;
+  width: 90%;
+  margin-top: -340px;
+  color: var(--colorWhite);
+  font-size: 2.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  z-index: 3;
+}
+
+
+.galeriaFotos{
+  width: 95%;
+  height: 250px;
+  margin-top: 50px;
+  border-radius: 10px;
+  background-color: var(--colorWhite);
+  border: 1px solid var(--colorGrayBorder);
+  z-index: 2;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider{
+  width: 95%;
+  height: 95%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.slides{
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+.slides input{
+  display: none;
+}
+.slide{
+  width: 25%;
+  position: relative;
+  transition: 2s;
+}
+.slide img{
+  width: 100%;
+}
+.manual-navigation{
+  width: 100%;
+  margin-top: -10%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.manual-btn{
+  border: 1px solid var(--colorWhite);
+  padding: 4px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.manual-btn:not(:last-child){
+  margin-right: 4rem;
+}
+.manual-btn:hover{
+  background-color: var(--colorWhite);
+}
+.checked{
+  background-color: var(--colorWhite);
+}
+#radio1:checked ~ .first{
+  margin-left: 0%;
+}
+#radio2:checked ~ .first{
+  margin-left: -25%;
+}
+#radio3:checked ~ .first{
+  margin-left: -50%;
+}
+#radio4:checked ~ .first{
+  margin-left: -75%;
+}
+#radio5:checked ~ .first{
+  margin-left: -100%;
+}
+
+
+
+
+@media (min-width: 580px){
+  .caminhoUrlContainer{
+    height: 110px;
+  }
+  .caminhoUrl{
+    height: 110px;
+  }
+}

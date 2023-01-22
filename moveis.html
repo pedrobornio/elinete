@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elinete Prado - Corretora de Imóveis</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/imoveis.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script src="./js/menu.js" defer></script>
+  <script src="./js/mask.js" defer></script>
+  <script src="./js/imoveis.js" defer></script>
+</head>
+<body>
+  <div id="ContainerBody">
+
+    <div id="maskMenuId" class="maskMenu" onclick="hideMask()">
+    </div>
+
+    <div id="menuBoxLeftId" class="menuBoxLeft">
+
+      <div class="closeMenu" onclick="hideMask()">
+        <span class="material-symbols-outlined ">
+          cancel
+          </span>
+          Fechar
+      </div>
+
+      <ul class="menuUl">
+        <li>
+          <span class="material-symbols-outlined menuBottomIcon">
+            home
+          </span>
+          <a href="index.html"> 
+            Página Inicial
+          </a>
+        </li>
+        <li> 
+          <span class="material-symbols-outlined menuBottomIcon">
+            real_estate_agent
+          </span>
+          <a href="#"> 
+            Nossos Serviços
+          </a>
+        </li>
+        <li> 
+          <span class="material-symbols-outlined menuBottomIcon ">
+            person
+          </span>
+          <a href="#"> 
+            Quem Somos
+          </a>
+        </li>
+        <li> 
+          <span class="material-symbols-outlined menuBottomIcon ">
+            mail
+          </span>
+          <a href="#"> 
+            Contatos
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+    <div id="ContainerMenuTop">
+      <div class="boxMenuTop">
+        <div id="logo">
+          <img src="assets/logo.png" class="imageLogoMenu" >
+        </div>
+        <div id="MenuIcon">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>        
+        </div>
+      </div>
+    </div>
+
+    <div id="ContainerConteudo">
+      <div class="caminhoUrlContainer">
+        <div class="caminhoUrl">
+         <a href="index.html" ><span style="padding-right: 5px; color: yellow;"> Início  </span></a>  | Imóveis
+        </div>
+      </div>
+
+      <div class="containerConteudoImovel">
+        <div class="capa"></div>
+        
+        <div class="textTitle">
+          <div style="font-size: 1.6rem; font-weight: 500;">Palmas-TO</div>
+          Casa na 905 sul
+        </div>
+
+        <div class="galeriaFotos">
+         
+          <div class="slider">
+
+            <div class="slides">
+
+              <input type="radio" name="radio-btn" id="radio1">
+              <input type="radio" name="radio-btn" id="radio2">
+              <input type="radio" name="radio-btn" id="radio3">
+              <input type="radio" name="radio-btn" id="radio4">
+              <input type="radio" name="radio-btn" id="radio5">
+
+              <div class="slide first">
+                <img src="/assets/casa108norte/01.jpg" alt="imagem1">
+              </div>
+              <div class="slide">
+                <img src="/assets/casa108norte/02.jpg" alt="imagem2">
+              </div>
+              <div class="slide">
+                <img src="/assets/casa108norte/03.jpg" alt="imagem3">
+              </div>
+              <div class="slide">
+                <img src="/assets/casa108norte/04.jpg" alt="imagem4">
+              </div>
+              <div class="slide">
+                <img src="/assets/casa108norte/05.jpg" alt="imagem5">
+              </div>
+
+            </div>
+
+            <div class="manual-navigation">
+              <label for="radio1" id="label1" name="label" class="manual-btn checked" onclick="clickLabel(1);"></label>
+              <label for="radio2" id="label2" name="label" class="manual-btn" onclick="clickLabel(2);"></label>
+              <label for="radio3" id="label3" name="label" class="manual-btn" onclick="clickLabel(3);"></label>
+              <label for="radio4" id="label4" name="label" class="manual-btn" onclick="clickLabel(4);"></label>
+              <label for="radio5" id="label5" name="label" class="manual-btn" onclick="clickLabel(5);"></label>
+            </div>
+
+          </div>
+                  
+        </div>
+        
+      </div>
+    </div>
+    
+    <div id="ContainerMenuBottom">
+      <div class="menuBottom menuZap">
+        <img src="assets/whatsapp.png" class="iconMenuBottom" alt="" srcset="">
+        Whats
+      </div>
+      <div class="menuBottom menuTel">
+        <span class="material-symbols-outlined menuBottomIcon">
+        call
+        </span> Ligar
+      </div>
+      <div class="menuBottom menuEmail">
+        <span class="material-symbols-outlined menuBottomIcon">
+          mail
+        </span> E-mail
+      </div>
+    </div>
+    
+  </div>
+</body>
+</html>

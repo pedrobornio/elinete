@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elinete Prado - Corretora de Imóveis</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script src="./js/menu.js" defer></script>
+  <script src="./js/mask.js" defer></script>
+  <script src="./js/scripts.js" defer></script>
+</head>
+<body>
+  <div id="ContainerBody">
+
+    <div id="maskMenuId" class="maskMenu" onclick="hideMask()">
+    </div>
+
+    <div id="menuBoxLeftId" class="menuBoxLeft">
+
+      <div class="closeMenu" onclick="hideMask()">
+        <span class="material-symbols-outlined ">
+          cancel
+          </span>
+          Fechar
+      </div>
+
+      <ul class="menuUl">
+        <li>
+          <span class="material-symbols-outlined menuBottomIcon">
+            home
+          </span>
+          <a href="index.html"> 
+            Página Inicial
+          </a>
+        </li>
+        <li> 
+          <span class="material-symbols-outlined menuBottomIcon">
+            real_estate_agent
+          </span>
+          <a href="#"> 
+            Nossos Serviços
+          </a>
+        </li>
+        <li> 
+          <span class="material-symbols-outlined menuBottomIcon ">
+            person
+          </span>
+          <a href="#"> 
+            Quem Somos
+          </a>
+        </li>
+        <li> 
+          <span class="material-symbols-outlined menuBottomIcon ">
+            mail
+          </span>
+          <a href="#"> 
+            Contatos
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+    <div id="favoritoBoxLeadId" class="favoritoBoxLead">
+      <div class="closeFavorito" onclick="hideMask()">
+        <span class="material-symbols-outlined ">
+          cancel
+          </span>
+          Fechar
+      </div>
+      <div style="font-weight: 800; margin-bottom: 8px;">Esse imóvel é ideal para você!</div>
+      <div style="margin-bottom: 8px;">Deixe seu Whatsapp para marcarmos uma visita.</div>
+      <input type="text" placeholder="Digite seu Nome" name="nome" id="nome" >
+      <input type="tel" placeholder="Digite seu Whatsapp" maxlength="15" name="whatsapp" id="whatsapp"  onkeyup="handlePhone(event)">
+      <div class="imovelButton">Enviar</div>
+    </div>
+
+    <div id="ContainerMenuTop">
+      <div class="boxMenuTop">
+        <div id="logo">
+          <img src="assets/logo.png" class="imageLogoMenu" >
+        </div>
+        <div id="MenuIcon">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>        
+        </div>
+      </div>
+    </div>
+
+    <div id="ContainerConteudo">
+      <div id="bgInfoTop">
+        <div id="bgInfoTopText">ENCONTRE SUA NOVA CASA EM</div>
+        <div id="bgInfoTopTextTitle">PALMAS/TO</div>
+        <div id="bgInfoTopSpace"></div>
+      </div>
+
+      <div class="ContainerOptions">
+        
+
+        <div id="ContainerOrder" class="ContainerOrder" >
+          <div class="boxOrderFiltro">
+            <div id="FiltrosText">
+              Ordenar por:
+            </div>
+            <div id="FiltrosAbrir" onclick="orderOptions(event);">
+              Mais Recente
+              <span id="iconExpand" class="material-symbols-outlined iconAbrir">expand_more</span>
+            </div>
+          </div>
+          <div id="boxOrderFiltroOptions" class="boxOrderFiltroOptions" style="margin-top: 20px;" onclick="maiorPreco();" >
+            Maior Preço
+          </div>
+          <div  id="boxOrderFiltroOptions2" class="boxOrderFiltroOptions" onclick="menorPreco();">
+            Menor Preço
+          </div>
+          <div id="boxOrderFiltroOptions3" class="boxOrderFiltroOptions" onclick="maisRecente();">
+            Mais Recente
+          </div>
+          <div id="boxOrderFiltroOptions4" class="boxOrderFiltroOptions" onclick="menosRecente();">
+            Menos Recente
+          </div>
+        </div>
+      </div>
+      
+
+      <div id="ContainerSearch" class="ContainerSearch">
+
+      </div>
+
+      
+
+      </div>
+      <div id="ContainerMenuBottom">
+        <div class="menuBottom menuZap">
+          <img src="assets/whatsapp.png" class="iconMenuBottom" alt="" srcset="">
+          Whats
+        </div>
+        <div class="menuBottom menuTel">
+          <span class="material-symbols-outlined menuBottomIcon">
+          call
+          </span> Ligar
+        </div>
+        <div class="menuBottom menuEmail">
+          <span class="material-symbols-outlined menuBottomIcon">
+            mail
+          </span> E-mail
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  </script>
+</body>
+</html>
